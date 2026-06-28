@@ -66,13 +66,18 @@ body {
 
 #navbar {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 20px;
+  left: 10%;
+  width: 80%;
   background: --rose-soft;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgb(255, 255, 255);
   z-index: 1000;
   transition: all 0.3s ease;
+  font-family:  "Playfair Display", serif;
+   border-radius: 30px;
+
+ 
 }
 
 .nav-container {
@@ -529,6 +534,7 @@ section {
   margin: 0 auto;
 }
 .sec-eyebrow {
+ 
   font-size: 0.75rem;
   letter-spacing: 3px;
   color: var(--rose);
@@ -540,6 +546,7 @@ section {
   gap: 8px;
 }
 .sec-eyebrow::before {
+
   content: "";
   width: 24px;
   height: 2px;
@@ -548,6 +555,7 @@ section {
   display: block;
 }
 .sec-title {
+  
   font-family: "Playfair Display", serif;
   font-size: 2.2rem;
   color: var(--dark);
@@ -1304,5 +1312,72 @@ footer span {
   }
   .edu-item::before {
     left: -1.7rem;
+  }
+  
+  .nav-container{
+        padding:15px 20px;
+    }
+
+    .logo{
+        font-size:1.3rem;
+    }
+
+
+    .hamburger{
+        display:flex;
+        flex-direction:column;
+        cursor:pointer;
+        gap:5px;
+    }
+
+    .nav-social{
+        display:none;
+    }
+
+    .nav-menu{
+
+        position:absolute;
+
+        top:80px;
+        left:80px;
+
+         width:220px;  
+
+        background:var(--rose-soft);
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:25px;
+
+        padding:25px 0;
+
+        transform:translateY(-150%);
+
+        transition:.4s ease;
+    }
+     
+    #navbar{
+      left: 5%;
+    }
+    .nav-menu.active{
+        transform:translateY(0);
+    }
+
+    .about-traits {
+     margin-right: 10%;
+}
+
+ .about-traits {
+    margin-top: 0px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 0px;
+    
+  }
+
+  .trait-card {
+    padding: 1rem;
   }
 }
