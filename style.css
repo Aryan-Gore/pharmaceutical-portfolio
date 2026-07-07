@@ -1435,4 +1435,16 @@ footer span {
   .trait-card {
     padding: 1rem;
   }
+
+  .proj-desc,.proj-tags{
+    display: none;
+  }
+  .proj-badge{
+    display: none;
+  }
+  .proj-title{
+    text-align: center;
+  }
+  
+  
 }
