@@ -508,6 +508,59 @@ body {
   padding: 10px 6px;
   text-align: center;
 }
+/* Resume Section */
+.resume{
+    grid-column:1/-1;
+    margin-top:18px;
+    padding-top:15px;
+    border-top:1px solid rgba(232,130,154,.18);
+}
+
+.resume-title{
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:var(--rose-deep);
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+.resume-actions{
+    display:flex;
+    gap:10px;
+}
+
+.resume-actions a{
+    flex:1;
+    text-decoration:none;
+    padding:10px 0;
+    border-radius:12px;
+    font-size:.82rem;
+    font-weight:600;
+    transition:.3s;
+}
+
+.resume-view{
+    background:#fff;
+    color:var(--rose-deep);
+    border:1.5px solid var(--rose);
+}
+
+.resume-view:hover{
+    background:var(--rose-soft);
+    transform:translateY(-2px);
+}
+
+.resume-download{
+    background:linear-gradient(135deg,var(--rose),var(--rose-deep));
+    color:#fff;
+    box-shadow:0 8px 18px rgba(232,130,154,.25);
+}
+
+.resume-download:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px rgba(232,130,154,.35);
+}
 .stat-num {
   font-family: "Playfair Display", serif;
   font-size: 1.1rem;
