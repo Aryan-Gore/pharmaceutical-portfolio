@@ -368,6 +368,8 @@ body {
 .hero-btns {
   display: flex;
   gap: 12px;
+  text-align: center;
+  width: 350px;
 }
 .btn-primary {
   background: var(--rose-deep);
